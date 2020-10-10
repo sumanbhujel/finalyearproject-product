@@ -33,4 +33,11 @@ dependencies {
     //for design
     implementation 'com.google.android.material:material:1.2.1'
 
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    // gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    // http logger
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.0'
+
 }
