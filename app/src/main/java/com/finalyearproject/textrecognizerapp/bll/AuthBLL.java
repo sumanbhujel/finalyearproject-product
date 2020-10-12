@@ -37,7 +37,7 @@ public class AuthBLL {
             Response<UserResponse> signUpResponse = signUpCall.execute();
             if (!signUpResponse.isSuccessful()) {
                 apiError = gson.fromJson(signUpResponse.errorBody().string(), ApiError.class);
-                authListener.onError(apiError.getErrors());
+                //authListener.onError(apiError.getErrors());
 //                return isSignUpSuccessful;
             } else if (signUpResponse.body().getUser() != null) {
                 isSignUpSuccessful = true;
